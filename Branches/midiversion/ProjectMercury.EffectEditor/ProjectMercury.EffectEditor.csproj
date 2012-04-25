@@ -1,0 +1,452 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D1D35C3C-FD2A-41D0-935D-8BF1DB87C6F3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProjectMercury.EffectEditor</RootNamespace>
+    <AssemblyName>ProjectMercury.EffectEditor</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553" />
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutWindow.Designer.cs">
+      <DependentUpon>AboutWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MidiBinding\BindingEditor\BindingEditorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MidiBinding\BindingEditor\BindingEditorControl.designer.cs">
+      <DependentUpon>BindingEditorControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MidiBinding\BindingEditor\BindingEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MidiBinding\BindingEditor\BindingEditorForm.designer.cs">
+      <DependentUpon>BindingEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MidiBinding\BindingEditor\BindingSettingsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MidiBinding\BindingEditor\BindingSettingsControl.Designer.cs">
+      <DependentUpon>BindingSettingsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MidiBinding\BindingEditor\ConverterEditorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MidiBinding\BindingEditor\ConverterEditorControl.designer.cs">
+      <DependentUpon>ConverterEditorControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MidiBinding\BindingEditor\ConverterEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MidiBinding\BindingEditor\ConverterEditorForm.Designer.cs">
+      <DependentUpon>ConverterEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CloneEmitterEventArgs.cs" />
+    <Compile Include="CloneModifierEventArgs.cs" />
+    <Compile Include="Controllers\EditorSupportController.cs" />
+    <Compile Include="Core.cs" />
+    <Compile Include="EmitterEventArgs.cs" />
+    <Compile Include="EmitterReinitialisedEventArgs.cs" />
+    <Compile Include="GraphicsDeviceControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GraphicsDeviceService.cs" />
+    <Compile Include="IInterfaceProvider.cs" />
+    <Compile Include="MidiBinding\BindingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MidiBinding\BindingForm.designer.cs">
+      <DependentUpon>BindingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MidiBinding\MidiSettings\MidiSettingsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MidiBinding\MidiSettings\MidiSettingsControl.designer.cs">
+      <DependentUpon>MidiSettingsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MidiBinding\MidiSettings\MidiSettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MidiBinding\MidiSettings\MidiSettingsForm.Designer.cs">
+      <DependentUpon>MidiSettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MidiBinding\ParticleEffectSettings\DataFactory.cs" />
+    <Compile Include="MidiBinding\ParticleEffectSettings\DataTreeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MidiBinding\ParticleEffectSettings\DataTreeControl.designer.cs">
+      <DependentUpon>DataTreeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MidiBinding\ParticleEffectSettings\LayerProperties.cs" />
+    <Compile Include="ModifierEventArgs.cs" />
+    <Compile Include="NewEmitterDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewEmitterDialog.Designer.cs">
+      <DependentUpon>NewEmitterDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewEmitterEventArgs.cs" />
+    <Compile Include="NewModifierEventArgs.cs" />
+    <Compile Include="NewTextureReferenceEventArgs.cs" />
+    <Compile Include="OptionsWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OptionsWindow.Designer.cs">
+      <DependentUpon>OptionsWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParticleEffectPreviewControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutWindow.resx">
+      <DependentUpon>AboutWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MidiBinding\BindingEditor\BindingEditorControl.resx">
+      <DependentUpon>BindingEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MidiBinding\BindingEditor\BindingEditorForm.resx">
+      <DependentUpon>BindingEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MidiBinding\BindingEditor\BindingSettingsControl.resx">
+      <DependentUpon>BindingSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MidiBinding\BindingEditor\ConverterEditorControl.resx">
+      <DependentUpon>ConverterEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MidiBinding\BindingEditor\ConverterEditorForm.resx">
+      <DependentUpon>ConverterEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MidiBinding\BindingForm.resx">
+      <DependentUpon>BindingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MidiBinding\MidiSettings\MidiSettingsControl.resx">
+      <DependentUpon>MidiSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MidiBinding\MidiSettings\MidiSettingsForm.resx">
+      <DependentUpon>MidiSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MidiBinding\ParticleEffectSettings\DataTreeControl.resx">
+      <DependentUpon>DataTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewEmitterDialog.resx">
+      <DependentUpon>NewEmitterDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionsWindow.resx">
+      <DependentUpon>OptionsWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TextureReferenceBrowser.resx">
+      <DependentUpon>TextureReferenceBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface.resx">
+      <DependentUpon>UserInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SerializeEventArgs.cs" />
+    <Compile Include="ServiceContainer.cs" />
+    <Compile Include="TextureReference.cs" />
+    <Compile Include="TextureReferenceBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TextureReferenceBrowser.Designer.cs">
+      <DependentUpon>TextureReferenceBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TextureReferenceChangedEventArgs.cs" />
+    <Compile Include="TreeNodes\EmitterTreeNode.cs" />
+    <Compile Include="TreeNodes\ModifierTreeNode.cs" />
+    <Compile Include="TreeNodes\ParticleEffectTreeNode.cs" />
+    <Compile Include="UserInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterface.designer.cs">
+      <DependentUpon>UserInterface.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BindingLibrary\BindingLibrary.csproj">
+      <Project>{3B61A660-99CF-476C-82E8-992AB640DA22}</Project>
+      <Name>BindingLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MidiLibrary\MidiLibrary.csproj">
+      <Project>{1A50293A-6F62-405C-81CC-CA0D9C7C981B}</Project>
+      <Name>MidiLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProjectMercury.Design\ProjectMercury.Design.csproj">
+      <Project>{87B7CA30-F7DE-41EE-BA60-4337DFEE1735}</Project>
+      <Name>ProjectMercury.Design</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProjectMercury.EffectEditor.PluginInterfaces\ProjectMercury.EffectEditor.PluginInterfaces.csproj">
+      <Project>{657CDBDC-F36A-4495-A7F5-D28FBF0A2029}</Project>
+      <Name>ProjectMercury.EffectEditor.PluginInterfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProjectMercury.Windows\ProjectMercury.Windows.csproj">
+      <Project>{1E3FDDBD-A15F-42CF-A83E-754476079B30}</Project>
+      <Name>ProjectMercury.Windows</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.htm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="EffectLibrary\BasicExplosion.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="EffectLibrary\BasicFireball.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="EffectLibrary\BasicSmokePlume.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="EffectLibrary\BeamMeUp.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="EffectLibrary\CampFire.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="EffectLibrary\FlowerBloom.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="EffectLibrary\MagicTrail.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="EffectLibrary\Paparazzi.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="EffectLibrary\SimpleRain.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="EffectLibrary\StarTrail.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="EffectLibrary\WaterJet.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\ProjectMercury.ContentPipeline.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\ProjectMercury.EffectEditor.DefaultPluginLibrary.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="..\API Reference\Documentation.chm">
+      <Link>Reference\Documentation.chm</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\ParticleEffect.ico" />
+    <Content Include="Resources\Center.png" />
+    <None Include="Resources\MercuryLogoWhiteBG.png" />
+    <Content Include="Resources\Stretch.png" />
+    <Content Include="Resources\Tile.png" />
+    <Content Include="Textures\Beam.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Textures\BeamBlurred.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Textures\Cloud001.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Textures\Cloud002.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Textures\Cloud003.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Textures\Cloud004.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Textures\Flame.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Textures\FlowerBurst.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Textures\Laser.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Textures\LensFlare.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Textures\License.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Textures\MultiDot.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Textures\Particle001.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Textures\Particle002.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Textures\Particle003.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Textures\Particle004.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Textures\Particle005.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Textures\Particle006.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Textures\Particle007.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Textures\Ring001.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Textures\Ring002.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Textures\SoftClumpy.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Textures\SoftSmokey.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Textures\Spikey001.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Textures\Spikey002.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Textures\Splash.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Textures\Spray001.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Textures\Star.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Textures\Water001.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Textures\Water002.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Textures\Weeds.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

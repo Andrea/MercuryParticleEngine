@@ -1,0 +1,191 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{DDEC6A87-F6C7-41E0-B370-2395A855EA0A}</ProjectGuid>
+    <ProjectTypeGuids>{9F340DF3-2AED-4330-AC16-78AC2D9B4738};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MercuryParticleEngine</RootNamespace>
+    <AssemblyName>MercuryParticleEngine</AssemblyName>
+    <XnaFrameworkVersion>v1.0</XnaFrameworkVersion>
+    <XnaPlatform>Windows</XnaPlatform>
+    <XNAGlobalContentPipelineAssemblies>Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll;Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll;Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll;Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</XNAGlobalContentPipelineAssemblies>
+    <XNAProjectContentPipelineAssemblies>
+    </XNAProjectContentPipelineAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Game">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Emitters\CircleEmitter.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>CircleEmitter</Name>
+    </Compile>
+    <Compile Include="Emitters\Emitter.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>Emitter</Name>
+    </Compile>
+    <Compile Include="EmitterGroup.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>EmitterGroup</Name>
+    </Compile>
+    <Compile Include="Emitters\LineEmitter.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>LineEmitter</Name>
+    </Compile>
+    <Compile Include="Emitters\SpiralEmitter.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>SpiralEmitter</Name>
+    </Compile>
+    <Compile Include="Emitters\SprayEmitter.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>SprayEmitter</Name>
+    </Compile>
+    <Compile Include="ImageStrip.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>ImageStrip</Name>
+    </Compile>
+    <Compile Include="Modifiers\Controllers\EmitterMouseController.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>EmitterMouseController</Name>
+    </Compile>
+    <Compile Include="Modifiers\Controllers\GroupMouseController.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>GroupMouseController</Name>
+    </Compile>
+    <Compile Include="Modifiers\Controllers\TimedTriggerController.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>TimedTriggerController</Name>
+    </Compile>
+    <Compile Include="Modifiers\General\AtmosphereModifier.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>AtmosphereModifier</Name>
+    </Compile>
+    <Compile Include="Modifiers\Color\Color2Modifier.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>Color2Modifier</Name>
+    </Compile>
+    <Compile Include="Modifiers\Color\Color3Modifier.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>Color3Modifier</Name>
+    </Compile>
+    <Compile Include="Modifiers\Color\RandomColorModifier.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>RandomColorModifier</Name>
+    </Compile>
+    <Compile Include="Modifiers\General\GravityModifier.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>GravityModifier</Name>
+    </Compile>
+    <Compile Include="Modifiers\General\WindowBounceModifier.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>WindowBounceModifier</Name>
+    </Compile>
+    <Compile Include="Modifiers\Modifier.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>Modifier</Name>
+    </Compile>
+    <Compile Include="Modifiers\Opacity\Opacity3Modifier.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>Opacity3Modifier</Name>
+    </Compile>
+    <Compile Include="Modifiers\Opacity\Opacity2Modifier.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>Opacity2Modifier</Name>
+    </Compile>
+    <Compile Include="Modifiers\Opacity\OpacityMultiModifier.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>OpacityMultiModifier</Name>
+    </Compile>
+    <Compile Include="Modifiers\Opacity\RandomOpacityModifier.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>RandomOpacityModifier</Name>
+    </Compile>
+    <Compile Include="Modifiers\General\ParticleRotationModifier.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>ParticleRotationModifier</Name>
+    </Compile>
+    <Compile Include="Modifiers\Scale\RandomScaleModifier.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>RandomScaleModifier</Name>
+    </Compile>
+    <Compile Include="Modifiers\Scale\Scale2Modifier.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>Scale2Modifier</Name>
+    </Compile>
+    <Compile Include="Modifiers\Scale\Scale3Modifier.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>Scale3Modifier</Name>
+    </Compile>
+    <Compile Include="Modifiers\Scale\ScaleMultiModifier.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>ScaleMultiModifier</Name>
+    </Compile>
+    <Compile Include="Particle.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>Particle</Name>
+    </Compile>
+    <Compile Include="ParticleSystem.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>ParticleSystem</Name>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>AssemblyInfo</Name>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\DefaultParticle.dds">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>MPEDefaultParticle</Name>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA\Game Studio Express\v1.0\Microsoft.Xna.ContentPipeline.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA\Game Studio Express\v1.0\Microsoft.Xna.Common.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

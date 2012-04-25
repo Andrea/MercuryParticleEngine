@@ -1,0 +1,154 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C# Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectMercury.Windows", "ProjectMercury.Windows\ProjectMercury.Windows.csproj", "{1E3FDDBD-A15F-42CF-A83E-754476079B30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectMercury.Xbox", "ProjectMercury.Xbox\ProjectMercury.Xbox.csproj", "{C3B4F513-2BB0-4F9F-82B7-E5C6B8822D0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectMercury.Design", "ProjectMercury.Design\ProjectMercury.Design.csproj", "{87B7CA30-F7DE-41EE-BA60-4337DFEE1735}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectMercury.EffectEditor", "ProjectMercury.EffectEditor\ProjectMercury.EffectEditor.csproj", "{D1D35C3C-FD2A-41D0-935D-8BF1DB87C6F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectMercury.EffectEditor.DefaultPluginLibrary", "ProjectMercury.EffectEditor.DefaultPluginLibrary\ProjectMercury.EffectEditor.DefaultPluginLibrary.csproj", "{1DA69486-E7D0-46EF-A8A7-74E3CDFFB3FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectMercury.ContentPipeline", "ProjectMercury.ContentPipeline\ProjectMercury.ContentPipeline.csproj", "{5B60FB65-704B-4D28-9117-AF0B25220484}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectMercury.EffectEditor.PluginInterfaces", "ProjectMercury.EffectEditor.PluginInterfaces\ProjectMercury.EffectEditor.PluginInterfaces.csproj", "{657CDBDC-F36A-4495-A7F5-D28FBF0A2029}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|x86 = Release|x86
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E3FDDBD-A15F-42CF-A83E-754476079B30}.Debug|x86.ActiveCfg = Debug|x86
+		{1E3FDDBD-A15F-42CF-A83E-754476079B30}.Debug|x86.Build.0 = Debug|x86
+		{1E3FDDBD-A15F-42CF-A83E-754476079B30}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{1E3FDDBD-A15F-42CF-A83E-754476079B30}.Release|x86.ActiveCfg = Release|x86
+		{1E3FDDBD-A15F-42CF-A83E-754476079B30}.Release|x86.Build.0 = Release|x86
+		{1E3FDDBD-A15F-42CF-A83E-754476079B30}.Release|Xbox 360.ActiveCfg = Release|x86
+		{C3B4F513-2BB0-4F9F-82B7-E5C6B8822D0E}.Debug|x86.ActiveCfg = Debug|Xbox 360
+		{C3B4F513-2BB0-4F9F-82B7-E5C6B8822D0E}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{C3B4F513-2BB0-4F9F-82B7-E5C6B8822D0E}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{C3B4F513-2BB0-4F9F-82B7-E5C6B8822D0E}.Release|x86.ActiveCfg = Release|Xbox 360
+		{C3B4F513-2BB0-4F9F-82B7-E5C6B8822D0E}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{C3B4F513-2BB0-4F9F-82B7-E5C6B8822D0E}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{87B7CA30-F7DE-41EE-BA60-4337DFEE1735}.Debug|x86.ActiveCfg = Debug|x86
+		{87B7CA30-F7DE-41EE-BA60-4337DFEE1735}.Debug|x86.Build.0 = Debug|x86
+		{87B7CA30-F7DE-41EE-BA60-4337DFEE1735}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{87B7CA30-F7DE-41EE-BA60-4337DFEE1735}.Release|x86.ActiveCfg = Release|x86
+		{87B7CA30-F7DE-41EE-BA60-4337DFEE1735}.Release|x86.Build.0 = Release|x86
+		{87B7CA30-F7DE-41EE-BA60-4337DFEE1735}.Release|Xbox 360.ActiveCfg = Release|x86
+		{D1D35C3C-FD2A-41D0-935D-8BF1DB87C6F3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D1D35C3C-FD2A-41D0-935D-8BF1DB87C6F3}.Debug|x86.Build.0 = Debug|Any CPU
+		{D1D35C3C-FD2A-41D0-935D-8BF1DB87C6F3}.Debug|Xbox 360.ActiveCfg = Debug|Any CPU
+		{D1D35C3C-FD2A-41D0-935D-8BF1DB87C6F3}.Release|x86.ActiveCfg = Release|Any CPU
+		{D1D35C3C-FD2A-41D0-935D-8BF1DB87C6F3}.Release|x86.Build.0 = Release|Any CPU
+		{D1D35C3C-FD2A-41D0-935D-8BF1DB87C6F3}.Release|Xbox 360.ActiveCfg = Release|Any CPU
+		{1DA69486-E7D0-46EF-A8A7-74E3CDFFB3FC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1DA69486-E7D0-46EF-A8A7-74E3CDFFB3FC}.Debug|x86.Build.0 = Debug|Any CPU
+		{1DA69486-E7D0-46EF-A8A7-74E3CDFFB3FC}.Debug|Xbox 360.ActiveCfg = Debug|Any CPU
+		{1DA69486-E7D0-46EF-A8A7-74E3CDFFB3FC}.Release|x86.ActiveCfg = Release|Any CPU
+		{1DA69486-E7D0-46EF-A8A7-74E3CDFFB3FC}.Release|x86.Build.0 = Release|Any CPU
+		{1DA69486-E7D0-46EF-A8A7-74E3CDFFB3FC}.Release|Xbox 360.ActiveCfg = Release|Any CPU
+		{5B60FB65-704B-4D28-9117-AF0B25220484}.Debug|x86.ActiveCfg = Debug|x86
+		{5B60FB65-704B-4D28-9117-AF0B25220484}.Debug|x86.Build.0 = Debug|x86
+		{5B60FB65-704B-4D28-9117-AF0B25220484}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{5B60FB65-704B-4D28-9117-AF0B25220484}.Release|x86.ActiveCfg = Release|x86
+		{5B60FB65-704B-4D28-9117-AF0B25220484}.Release|x86.Build.0 = Release|x86
+		{5B60FB65-704B-4D28-9117-AF0B25220484}.Release|Xbox 360.ActiveCfg = Release|x86
+		{657CDBDC-F36A-4495-A7F5-D28FBF0A2029}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{657CDBDC-F36A-4495-A7F5-D28FBF0A2029}.Debug|x86.Build.0 = Debug|Any CPU
+		{657CDBDC-F36A-4495-A7F5-D28FBF0A2029}.Debug|Xbox 360.ActiveCfg = Debug|Any CPU
+		{657CDBDC-F36A-4495-A7F5-D28FBF0A2029}.Release|x86.ActiveCfg = Release|Any CPU
+		{657CDBDC-F36A-4495-A7F5-D28FBF0A2029}.Release|x86.Build.0 = Release|Any CPU
+		{657CDBDC-F36A-4495-A7F5-D28FBF0A2029}.Release|Xbox 360.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 21
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs01.codeplex.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ProjectMercury.Windows\\ProjectMercury.Windows.csproj
+		SccProjectName1 = ProjectMercury.Windows
+		SccLocalPath1 = ProjectMercury.Windows
+		SccProjectUniqueName2 = TestApp-Win\\TestApp-Win.csproj
+		SccProjectName2 = TestApp-Win
+		SccLocalPath2 = TestApp-Win
+		SccProjectUniqueName3 = TestApp-Xbx\\TestApp-Xbx.csproj
+		SccProjectName3 = TestApp-Xbx
+		SccLocalPath3 = TestApp-Xbx
+		SccProjectUniqueName4 = ProjectMercury.Editor\\ProjectMercury.Editor.csproj
+		SccProjectName4 = ProjectMercury.Editor
+		SccLocalPath4 = ProjectMercury.Editor
+		SccProjectUniqueName5 = ProjectMercury.Design\\ProjectMercury.Design.csproj
+		SccProjectName5 = ProjectMercury.Design
+		SccLocalPath5 = ProjectMercury.Design
+		SccProjectUniqueName6 = ProjectMercury.Windows\\Content\\Content.contentproj
+		SccProjectTopLevelParentUniqueName6 = ProjectMercury.Windows\\ProjectMercury.Windows.csproj
+		SccProjectName6 = ProjectMercury.Windows/Content
+		SccLocalPath6 = ProjectMercury.Windows\\Content
+		SccProjectUniqueName7 = ProjectMercury.Xbox\\Content\\Content.contentproj
+		SccProjectTopLevelParentUniqueName7 = ProjectMercury.Xbox\\ProjectMercury.Xbox.csproj
+		SccProjectName7 = ProjectMercury.Xbox/Content
+		SccLocalPath7 = ProjectMercury.Xbox\\Content
+		SccProjectUniqueName8 = ProjectMercury.Xbox\\ProjectMercury.Xbox.csproj
+		SccProjectName8 = ProjectMercury.Xbox
+		SccLocalPath8 = ProjectMercury.Xbox
+		SccProjectUniqueName9 = TestApp-Win\\Content\\Content.contentproj
+		SccProjectTopLevelParentUniqueName9 = TestApp-Win\\TestApp-Win.csproj
+		SccProjectName9 = TestApp-Win/Content
+		SccLocalPath9 = TestApp-Win\\Content
+		SccProjectUniqueName10 = TestApp-Xbx\\Content\\Content.contentproj
+		SccProjectTopLevelParentUniqueName10 = TestApp-Xbx\\TestApp-Xbx.csproj
+		SccProjectName10 = TestApp-Xbx/Content
+		SccLocalPath10 = TestApp-Xbx\\Content
+		SccProjectUniqueName11 = ProjectMercury.Samples.Battleship.Windows\\ProjectMercury.Samples.Battleship.Windows.csproj
+		SccProjectTopLevelParentUniqueName11 = ProjectMercury.sln
+		SccProjectName11 = ProjectMercury.Samples.Battleship.Windows
+		SccLocalPath11 = ProjectMercury.Samples.Battleship.Windows
+		SccProjectUniqueName12 = ProjectMercury.Samples.Battleship.Windows\\Content\\Content.contentproj
+		SccProjectTopLevelParentUniqueName12 = ProjectMercury.Samples.Battleship.Windows\\ProjectMercury.Samples.Battleship.Windows.csproj
+		SccProjectName12 = ProjectMercury.Samples.Battleship.Windows/Content
+		SccLocalPath12 = ProjectMercury.Samples.Battleship.Windows\\Content
+		SccProjectUniqueName13 = ProjectMercury.Samples.Battleship.Xbox\\ProjectMercury.Samples.Battleship.Xbox.csproj
+		SccProjectTopLevelParentUniqueName13 = ProjectMercury.sln
+		SccProjectName13 = ProjectMercury.Samples.Battleship.Xbox
+		SccLocalPath13 = ProjectMercury.Samples.Battleship.Xbox
+		SccProjectUniqueName14 = ProjectMercury.Samples.Battleship.Xbox\\Content\\Content.contentproj
+		SccProjectTopLevelParentUniqueName14 = ProjectMercury.Samples.Battleship.Xbox\\ProjectMercury.Samples.Battleship.Xbox.csproj
+		SccProjectName14 = ProjectMercury.Samples.Battleship.Xbox/Content
+		SccLocalPath14 = ProjectMercury.Samples.Battleship.Xbox\\Content
+		SccProjectUniqueName15 = ProjectMercury.Samples.Rain.Windows\\ProjectMercury.Samples.Rain.Windows.csproj
+		SccProjectTopLevelParentUniqueName15 = ProjectMercury.sln
+		SccProjectName15 = ProjectMercury.Samples.Rain.Windows
+		SccLocalPath15 = ProjectMercury.Samples.Rain.Windows
+		SccProjectUniqueName16 = ProjectMercury.Samples.Rain.Windows\\Content\\Content.contentproj
+		SccProjectTopLevelParentUniqueName16 = ProjectMercury.Samples.Rain.Windows\\ProjectMercury.Samples.Rain.Windows.csproj
+		SccProjectName16 = ProjectMercury.Samples.Rain.Windows/Content
+		SccLocalPath16 = ProjectMercury.Samples.Rain.Windows\\Content
+		SccProjectUniqueName17 = ProjectMercury.FarseerPhysicsModifier.Windows\\ProjectMercury.FarseerPhysicsModifier.Windows.csproj
+		SccProjectTopLevelParentUniqueName17 = ProjectMercury.sln
+		SccProjectName17 = ProjectMercury.FarseerPhysicsModifier.Windows
+		SccLocalPath17 = ProjectMercury.FarseerPhysicsModifier.Windows
+		SccProjectUniqueName18 = ProjectMercury.FarseerPhysicsModifier.Xbox\\ProjectMercury.FarseerPhysicsModifier.Xbox.csproj
+		SccProjectTopLevelParentUniqueName18 = ProjectMercury.sln
+		SccProjectName18 = ProjectMercury.FarseerPhysicsModifier.Xbox
+		SccLocalPath18 = ProjectMercury.FarseerPhysicsModifier.Xbox
+		SccProjectUniqueName19 = ProjectMercury.EffectEditor\\ProjectMercury.EffectEditor.csproj
+		SccProjectName19 = ProjectMercury.EffectEditor
+		SccLocalPath19 = ProjectMercury.EffectEditor
+		SccProjectUniqueName20 = ProjectMercury.EffectEditor.DefaultPluginLibrary\\ProjectMercury.EffectEditor.DefaultPluginLibrary.csproj
+		SccProjectName20 = ProjectMercury.EffectEditor.DefaultPluginLibrary
+		SccLocalPath20 = ProjectMercury.EffectEditor.DefaultPluginLibrary
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1DA69486-E7D0-46EF-A8A7-74E3CDFFB3FC} = {1149EF74-FB04-4FA7-AD06-6CB0DC205C04}
+		{657CDBDC-F36A-4495-A7F5-D28FBF0A2029} = {1149EF74-FB04-4FA7-AD06-6CB0DC205C04}
+	EndGlobalSection
+EndGlobal
