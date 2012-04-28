@@ -7,7 +7,7 @@ I've used Mercury a few times, enough times to know that the project doesn't see
 I can't really call this a roadmap, I think it falls under essential maintainance.
 
 * Create the appropiate branches, Version 4.0 will have it's own branch. Will keep original tags (If you know a way please let me know)
-* Build version 4.0 and offer assemblies. 
-* Add nugget packages for the different platforms (Version 4.0 WP7 already in Downloads section)
+* Build version 4.0 and offer assemblies. (Version 4.0 WP7 already in Downloads section)
+* Add nugget packages for the different platforms 
 
 
