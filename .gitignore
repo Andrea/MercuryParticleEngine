@@ -37,6 +37,8 @@ Ankh.NoLoad
 _ReSharper*/
 *.resharper
 [Tt]est[Rr]esult*
+*.dotCover
+*.cachefile
 
 #Project files
 [Bb]uild/
